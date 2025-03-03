@@ -1,7 +1,7 @@
-﻿using Algorithms.LeetCodeProblems.AmazonInverviewQuestions.TwoSum;
+﻿using Algorithms.LeetCodeProblems.AmazonInverviewQuestions;
 using System.Runtime.CompilerServices;
 
-namespace Algorithms.Tests
+namespace Algorithms.Tests.LeetCodeTests
 {
     [TestClass]
     public sealed class TwoSumTests

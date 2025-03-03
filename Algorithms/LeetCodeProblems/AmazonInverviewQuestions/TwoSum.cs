@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions.TwoSum
+namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
 {
     public class TwoSum
     {
@@ -21,7 +21,7 @@ namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions.TwoSum
                 }
             }
 
-            return null;
+            return [];
         }
         public static int[] TwoSumLinearComplexity(int[] nums, int target)
         {
