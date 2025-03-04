@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
 {
-    // https://leetcode.com/problems/merge-intervals
     public class MergeIntervals
     {
         //https://leetcode.com/problems/merge-intervals
+        
         public static int[][] Merge(int[][] intervals)
         {
             int[][] sortedArray = intervals.OrderBy(x => x[0]).ToArray();
@@ -30,6 +30,7 @@ namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
                 }   
 
                 else
+                    // TODO Refactor to remove Code Duplication 
                     outputArray.Add([sortedArray[i][startInterval], sortedArray[i][endInterval]]);
                             }
             return outputArray.ToArray();
