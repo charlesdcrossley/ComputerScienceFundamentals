@@ -11,6 +11,8 @@ namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
         // https://leetcode.com/problems/merge-sorted-array
         public static void Merge(int[] nums1, int m, int[] nums2, int n)
         {
+            if(nums2.Length == 0) return;
+
             int[] temp = new int[m + n];
 
             for (int i=0,j = 0,k=0 ; j < m;)
@@ -34,7 +36,6 @@ namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
                 nums1[i] = temp[i];
                 
             }
-
         }
     }
 }
