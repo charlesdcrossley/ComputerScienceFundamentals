@@ -24,4 +24,4 @@ SinglyLinkedList : + void AddFirst(Node<T>)
 
 
 ---
-![alt text](<Blank diagram - Page 1 (2).png>)
+![alt text](<../Images/singly-linked-list-diagram.png>)
