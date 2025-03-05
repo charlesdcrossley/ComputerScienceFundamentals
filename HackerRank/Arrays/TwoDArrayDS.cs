@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.HackerRankProblems.Arrays
+namespace Practice.HackerRank.Arrays
 {
     //https://www.hackerrank.com/challenges/2d-array/problem
     public class TwoDArrayDS

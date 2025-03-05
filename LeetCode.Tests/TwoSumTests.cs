@@ -1,4 +1,4 @@
-﻿using Algorithms.LeetCodeProblems.AmazonInverviewQuestions;
+﻿using Practice.LeetCode.AmazonInterviewQuestions;
 using System.Runtime.CompilerServices;
 
 namespace Algorithms.Tests.LeetCodeTests

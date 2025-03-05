@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.LeetCodeProblems.AmazonInverviewQuestions
+namespace Practice.LeetCode.AmazonInterviewQuestions
 {
     public class MergeSortedArray
     {

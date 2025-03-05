@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Practice.HackerRank.Arrays;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Algorithms.HackerRankProblems.Arrays;
 
-namespace Algorithms.Tests.HackerRankTests
+namespace HackerRank.Tests
 {
     [TestClass]
     public class TwoDArrayDSTests
@@ -13,10 +13,10 @@ namespace Algorithms.Tests.HackerRankTests
         [TestMethod]
         public void HourGlassSum_Whengiven2DArrayOfIntegers_ReturnsMaximumHourGlassSum()
         {
-            List<List<int>> intervals = [   
-                                            [1, 1, 1, 0, 0, 0], 
-                                            [0, 1, 0, 0, 0, 0], 
-                                            [1, 1, 1, 0, 0, 0], 
+            List<List<int>> intervals = [
+                                            [1, 1, 1, 0, 0, 0],
+                                            [0, 1, 0, 0, 0, 0],
+                                            [1, 1, 1, 0, 0, 0],
                                             [0, 0, 2, 4, 4, 0],
                                             [0, 0, 0, 2, 0, 0],
                                             [0, 0, 1, 2, 4, 0]
@@ -30,6 +30,5 @@ namespace Algorithms.Tests.HackerRankTests
             Assert.AreEqual(expectedResult, output);
 
         }
-
     }
 }

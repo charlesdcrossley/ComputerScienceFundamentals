@@ -1,4 +1,4 @@
-﻿using Algorithms.LeetCodeProblems.AmazonInverviewQuestions;
+﻿using Practice.LeetCode.AmazonInterviewQuestions;
 
 namespace Algorithms.Tests.LeetCodeTests
 {

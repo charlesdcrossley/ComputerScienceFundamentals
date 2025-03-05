@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="GraphTraversal\" />
+    <Folder Include="TreeTraversal\" />
+    <Folder Include="Sorting\" />
+    <Folder Include="Searching\" />
+  </ItemGroup>
+
 </Project>
