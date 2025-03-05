@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{70767FE8-C52C-405C-B0D5-35C76DB4810A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Tests", "Algorithms.Tests\Algorithms.Tests.csproj", "{23687A00-D3E4-4521-A72D-4EA60637DABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Test", "Algorithms.Tests\Algorithms.Test.csproj", "{23687A00-D3E4-4521-A72D-4EA60637DABA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures.Test", "DataStructures.Test\DataStructures.Test.csproj", "{679450B6-E14E-426E-A514-3BADE533BD8C}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Source", "1. Source", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Practice", "2. Practice", "{B60F5786-D4C6-4CE9-AFF3-4486F33237F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank.Tests", "HackerRank.Tests\HackerRank.Tests.csproj", "{AAF124D9-0EEE-41C8-A83F-112CF8C4A3D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank.Test", "HackerRank.Tests\HackerRank.Test.csproj", "{AAF124D9-0EEE-41C8-A83F-112CF8C4A3D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Tests", "LeetCode.Tests\LeetCode.Tests.csproj", "{A2901A78-7A00-4C9F-A427-C62537F77F5C}"
 EndProject
