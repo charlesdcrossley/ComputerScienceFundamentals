@@ -25,7 +25,7 @@ namespace HackerRank.Tests
 
             int expectedResult = 19;
 
-            var output = TwoDArrayDS.HourglassSum(intervals);
+            var output = TwoDArrayDS.HourglassSumProblem(intervals);
 
             Assert.AreEqual(expectedResult, output);
 

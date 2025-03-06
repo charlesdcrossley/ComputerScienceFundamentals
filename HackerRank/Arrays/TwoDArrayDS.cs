@@ -10,7 +10,7 @@ namespace Practice.HackerRank.Arrays
     //https://www.hackerrank.com/challenges/2d-array/problem
     public class TwoDArrayDS
     {
-        public static int HourglassSum(List<List<int>> arr)
+        public static int HourglassSumProblem(List<List<int>> arr)
         {
             int maxsum = int.MinValue;
             for (int i = 0; i < arr.Count-2; i++)
