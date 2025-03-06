@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,12 +21,10 @@ namespace DataStructures.LinkedList
         }
         public int Count { get; set; }
 
-        public void AddFirst(Node<T> node)
+        public void InsertFirst(Node<T> node)
         {
             Node<T> temp = Head;
-
             Head = node;
-
             Head.Next = temp;
 
             Count++;
@@ -33,6 +32,18 @@ namespace DataStructures.LinkedList
         public T GetFirst()
         {
             return Head.Value;
+        }
+        public void DisplayListConsole()
+        {
+
+            Node<T> start = Head;
+            while (start.Next.Next != null)
+            {
+                Console.WriteLine(start.Value);
+                start = start.Next;
+            }
+                
+
         }
     }
 }
