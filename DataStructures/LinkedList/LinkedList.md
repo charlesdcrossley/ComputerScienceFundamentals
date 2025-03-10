@@ -11,15 +11,17 @@ classDiagram
 class Node
 Node : + T Value
 Node : + Node Next
+Node : + AddFirst(Node)
+Node : + withdrawal(amount)
 
 class SinglyLinkedList
 SinglyLinkedList : + Node Head
 SinglyLinkedList : + Node Tail
 SinglyLinkedList : + int Count
-SinglyLinkedList : + void AddFirst(Node<T>)
-SinglyLinkedList : + void DisplayListConsole()
+SinglyLinkedList : + void AddFirst(Node)
 
 ```
 
+
 ---
-![alt text](<SinglyLinkedList.png>)
+![alt text](<../Images/singly-linked-list-diagram.png>)
