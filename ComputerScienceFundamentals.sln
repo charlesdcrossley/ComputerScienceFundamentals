@@ -16,6 +16,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCode.csproj", "{B910FF7F-E47D-4F91-A335-C5C8C1745759}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Tests", "3. Tests", "{C130985E-7AB7-41EC-B815-6693B9161BD7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Charles Crossley\Downloads\Algorithms-CSharp-Course\Algorithms-CSharp-Course\Data\1Kints.txt = ..\..\Users\Charles Crossley\Downloads\Algorithms-CSharp-Course\Algorithms-CSharp-Course\Data\1Kints.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. FirstPrinciples", "1. FirstPrinciples", "{45E8333B-07D9-430E-9CE2-A25E7EE52527}"
 EndProject
