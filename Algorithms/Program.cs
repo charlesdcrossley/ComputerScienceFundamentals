@@ -1,4 +1,12 @@
-﻿
+﻿using Algorithms;
+using Algorithms.AlgorithmAnalysis;
+using System;
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Console App for test");
+
+int[] integers = FileReader.ReadIntegersFromFile(@"AlgorithmAnalysis/SampleData/1Kints.txt").ToArray();
+int count = 0;
+TimeSpan time = ThreeSum.TimeAlgorithm(integers, ThreeSum.EqualZeroCountCubicComplexity, out count);
+
+Console.WriteLine($"{count} number of triplets found to equal 0 \n" );
+Console.WriteLine($"Tine taken to run was {time.ToString()}");
+Console.ReadLine();
