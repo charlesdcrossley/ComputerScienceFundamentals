@@ -65,5 +65,20 @@ namespace DataStructures.Test.LinkedLists
             Assert.AreEqual(expectedOutput.ToString(), writer.ToString());
             
         }
+    [TestMethod]
+    public void GetLast_WhenCalled_ReturnsLastNodeInList()
+    {
+        SinglyLinkedList<int> list = new SinglyLinkedList<int>();
+
+        list.InsertFirst(new Node<int>(3));
+        list.InsertFirst(new Node<int>(2));
+        list.InsertFirst(new Node<int>(1));
+
+        list.InsertLast(new Node<int>(4));
+
+        list.DisplayListConsole(true);
+
+    }
+
     }
 }

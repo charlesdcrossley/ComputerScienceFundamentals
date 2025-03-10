@@ -16,34 +16,56 @@ namespace DataStructures.LinkedList
         {
             Head = new Node<T>(default);
             Tail = new Node<T>(default);
-            Head.Next = Tail;
 
         }
         public int Count { get; set; }
 
         public void InsertFirst(Node<T> node)
         {
+            if (Head.Next == null)
+                Tail = node;
+
             Node<T> temp = Head;
             Head = node;
             Head.Next = temp;
 
             Count++;
+
+        
         }
+        public void InsertLast(Node<T> node)
+        {
+            Tail.Next = node;
+            Node<T> temp = Tail;            
+            Tail = node;            ;
+            Tail.Next = temp;
+                    }
         public T GetFirst()
         {
             return Head.Value;
         }
-        public void DisplayListConsole()
+        public T GetLast()
         {
+            return Tail.Value;
+        }
+        public void DisplayListConsole(bool debugFlag = false)
+        {
+            Node<T> node = Head;
 
-            Node<T> start = Head;
-            while (start.Next.Next != null)
+            do
             {
-                Console.WriteLine(start.Value);
-                start = start.Next;
+                switch (debugFlag)
+                {
+                    case false:
+                        Console.WriteLine(node.Value);
+                        break;
+                    case true:
+                        Debug.WriteLine(node.Value);
+                        break;
+                }
+                node = node.Next;
             }
-                
-
+            while (node.Next != null);            
         }
     }
 }
