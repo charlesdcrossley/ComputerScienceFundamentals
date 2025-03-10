@@ -25,9 +25,5 @@ namespace Algorithms.Test
             Assert.IsTrue(outputIntegers.All(x => x is int));
         }
 
-
-        //
-
-
     }
 }
