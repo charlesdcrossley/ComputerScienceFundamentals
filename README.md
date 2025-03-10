@@ -8,4 +8,4 @@ Engineer Spock - Udemy
 
 https://www.udemy.com/course/algorithms-data-structures-csharp/
 
-![alt text](image.png)
+![alt text](agorithms-and-data-structures.png)

@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Tests", "3. Tests", "{C130985E-7AB7-41EC-B815-6693B9161BD7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Source", "1. Source", "{45E8333B-07D9-430E-9CE2-A25E7EE52527}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. FirstPrinciples", "1. FirstPrinciples", "{45E8333B-07D9-430E-9CE2-A25E7EE52527}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Practice", "2. Practice", "{B60F5786-D4C6-4CE9-AFF3-4486F33237F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank.Test", "HackerRank.Tests\HackerRank.Test.csproj", "{AAF124D9-0EEE-41C8-A83F-112CF8C4A3D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerRank.Test", "HackerRank.Tests\HackerRank.Test.csproj", "{AAF124D9-0EEE-41C8-A83F-112CF8C4A3D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Tests", "LeetCode.Tests\LeetCode.Tests.csproj", "{A2901A78-7A00-4C9F-A427-C62537F77F5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode.Tests", "LeetCode.Tests\LeetCode.Tests.csproj", "{A2901A78-7A00-4C9F-A427-C62537F77F5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
