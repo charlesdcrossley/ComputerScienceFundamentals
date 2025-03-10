@@ -16,6 +16,7 @@ namespace HackerRank.Tests
         [TestMethod]
         public void DynamicArray_WhenGivenIntegerAnd2DArrayOfQueries_ReturnsCorrectIntegerArray()
         {
+            // Arrange
             string txtInput = GetFilePath(@"Input\DynamicArray.QueryProcessor.txt");
             string txtExpectedOutput = GetFilePath(@"ExpectedOutput\DynamicArray.QueryProcessor.txt");
             
@@ -35,7 +36,6 @@ namespace HackerRank.Tests
                 queries.Add(input.ReadLine().TrimEnd().Split(' ').ToList().Select(queriesTemp => Convert.ToInt32(queriesTemp)).ToList());
             }
 
-            List<int> result = DynamicArray.QueryProcessor(n, queries);
             List<int> expected = new List<int>();
 
             string t = String.Empty;
@@ -44,6 +44,11 @@ namespace HackerRank.Tests
                 expected.Add(Convert.ToInt32(t));
             }
 
+            // Act 
+            List<int> result = DynamicArray.QueryProcessor(n, queries);
+            
+
+            // Assert
             CollectionAssert.AreEqual(result, expected);
 
         }
