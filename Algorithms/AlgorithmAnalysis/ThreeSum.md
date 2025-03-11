@@ -49,13 +49,13 @@ Calculate Slope :
 
 Roughly 3
 
-=> $log{_2}{(T(n))} = 3log{_2}n  + log{_2}a$ **- a is constant**
-=> $log{_2}{(T(n))} = log{_2}a * N^3$
-=> $T(n) = aN^3$
+=> $log{_2}{(T(n))} = 3log{_2}n  + log{_2}a$ **- a is constant**  
+=> $log{_2}{(T(n))} = log{_2}a * N^3$  
+=> $T(n) = aN^3$  
 
 
 References: 
 
- https://www.symbolab.com/solver/logarithmic-equation-calculator
+ https://www.symbolab.com/solver/logarithmic-equation-calculator  
  https://www.udemy.com/course/algorithms-data-structures-csharp
  
