@@ -1,5 +1,7 @@
 ﻿
-## Problem 
+[Section 3 - Introduction to Algorithm Analyis](https://www.udemy.com/course/algorithms-data-structures-csharp/learn/lecture/12727527#overview)
+
+## Problem :question:
 
 >Iterate over a set of integer numbers and find all of the triplets summing which the result will be 0
 
@@ -37,6 +39,23 @@ Ex:
  -442472 + 155091 + 287381 = 0 ? Y  :heavy_check_mark:
 
 
+Results: 
 
- 
+![alt text](image-1.png)
+
+Calculate Slope : 
+
+![alt text](image.png)
+
+Roughly 3
+
+=> $log{_2}{(T(n))} = 3log{_2}n  + log{_2}a$ **- a is constant**
+=> $log{_2}{(T(n))} = log{_2}a * N^3$
+=> $T(n) = aN^3$
+
+
+References: 
+
+ https://www.symbolab.com/solver/logarithmic-equation-calculator
+ https://www.udemy.com/course/algorithms-data-structures-csharp
  
