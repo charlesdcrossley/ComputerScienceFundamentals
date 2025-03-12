@@ -116,11 +116,11 @@ $T(n) = 61*10^{-8} *n^3$
 
 ![alt text](<../../images/AlgorithmAnalysis/ThreeSum/desmos-graph-execution-time-per-input-size.png>)
 
-https://www.desmos.com/calculator/hrrxbuwlcr
+https://www.desmos.com/calculator/hrrxbuwlcr  
 
-References: 
+References:  
 
- https://www.symbolab.com/solver/logarithmic-equation-calculator
- https://www.udemy.com/course/algorithms-data-structures-csharp
- https://www.chilimath.com/lessons/advanced-algebra/logarithm-rules/
- https://www.desmos.com/
+ https://www.symbolab.com/solver/logarithmic-equation-calculator  
+ https://www.udemy.com/course/algorithms-data-structures-csharp  
+ https://www.chilimath.com/lessons/advanced-algebra/logarithm-rules/  
+ https://www.desmos.com/  
