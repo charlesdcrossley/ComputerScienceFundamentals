@@ -118,6 +118,9 @@ $T(n) = 61*10^{-8} *n^3$
 
 https://www.desmos.com/calculator/hrrxbuwlcr  
 
+
+
+
 References:  
 
  https://www.symbolab.com/solver/logarithmic-equation-calculator  
