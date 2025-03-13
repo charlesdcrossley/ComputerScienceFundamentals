@@ -2,6 +2,10 @@
 
 References : 
 
+Jamro, M. (2024). C# Data Structures and Algorithms (2nd ed.). Packt Publishing.
+
+
+
 Data Structures based Great Lecture from:
 
 Engineer Spock - Udemy

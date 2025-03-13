@@ -1,7 +1,6 @@
 ﻿
 # [Section 3 - Introduction to Algorithm Analyis](https://www.udemy.com/course/algorithms-data-structures-csharp/learn/lecture/12727527#overview)
 
-
 ## Problem Statement
 Iterate over a set of integer numbers and find all of the triplets summing which the result will be 0
 
@@ -118,10 +117,32 @@ $T(n) = 61*10^{-8} *n^3$
 
 https://www.desmos.com/calculator/hrrxbuwlcr  
 
+## Approximations and Order of Growth
+
+- Donald Knuth - https://en.wikipedia.org/wiki/Donald_Knuth :
+  - Contributed to Computational Complexity
+  - Popularized Asymptatic Notation (Big O Notation)
+
+<br/>
+
+| Order of Growth | Type         |
+|-----------------|--------------|
+| $2^n$           | Exponential  |
+| $n^3$           | Cubic        |
+| $n^2$           | Quadratic    |
+| $nlogn$         | Linearithmic |
+| $n$             | Linear       |
+| $lg_n$          | Logarithmic  |
+| 1               | Constant     |
 
 
+### Asymptatic Notation 
+- Big $\Omicron$ Notation - Worst Case
+- Big $\Theta$  Notation - Best Case
+- Big $\Omega$ Notation - 
 
 References:  
+
 
  https://www.symbolab.com/solver/logarithmic-equation-calculator  
  https://www.udemy.com/course/algorithms-data-structures-csharp  
