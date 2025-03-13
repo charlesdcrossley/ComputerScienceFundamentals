@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructures.Array
+namespace DataStructures.Arrays
 {
     public class SingleDimensionArray
     {
@@ -23,6 +23,18 @@ namespace DataStructures.Array
                 emptyArray[i] = values[i];
             }
             return emptyArray;
+        }
+        public static T GetFirstElement<T>(T[] populatedArray)
+        {
+            return populatedArray[0];
+        }
+        public static T GetLastElement<T>(T[] populatedArray)
+        {
+            return populatedArray[populatedArray.Length - 1];
+        }
+        public static T GetNthElement<T>(T[] populatedArray, int n)
+        {
+            return populatedArray[n];
         }
     }
 }
