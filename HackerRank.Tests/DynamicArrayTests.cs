@@ -19,7 +19,8 @@ namespace HackerRank.Tests
             string txtInput = GetFilePath(@"Input\DynamicArray.QueryProcessor.txt");
             string txtExpectedOutput = GetFilePath(@"ExpectedOutput\DynamicArray.QueryProcessor.txt");
             
-            StreamReader input = new StreamReader(txtInput);
+            StreamReader input = new StreamReader(txtInput);            
+
             StreamReader expectedOutput = new StreamReader(txtExpectedOutput);
 
             string[] firstMultipleInput = input.ReadLine().TrimEnd().Split(' ');

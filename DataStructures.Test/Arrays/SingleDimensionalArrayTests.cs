@@ -3,15 +3,11 @@ using DataStructures.Arrays;
 using Microsoft.VisualStudio.TestPlatform.CoreUtilities.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace DataStructures.Test.Arrays
 {
     [TestClass]
-    public class SingleDimensionArrayTests
+    public class SingleDimensionalArrayTests
     {
         private Faker _faker = new Faker();
 

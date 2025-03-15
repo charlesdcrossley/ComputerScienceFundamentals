@@ -14,9 +14,9 @@ namespace DataStructures.LinkedList
 
         public SinglyLinkedList()
         {
-            Head = new Node<T>(default);
-            Tail = new Node<T>(default);
-
+                Head = new Node<T>(default);
+                Tail = new Node<T>(default);
+            
         }
         public int Count { get; set; }
 
