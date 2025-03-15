@@ -6,23 +6,30 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Arrays
 {
-    public class SingleDimensionArray
+    public class SingleDimensionArray<T>
     {
-        public static T[] DeclareEmptyArray<T>(int numberOfElements)
+        private T[] _array;
+        public SingleDimensionArray(int numberOfElements)
         {
-            T[] array = new T[numberOfElements];
-            return array;
+            _array = new T[numberOfElements];
         }
+        public T[] GetArray()
+        { 
+            return _array;
+        }
+        
         public static T[] PopulateEmptyArray<T>(T[] emptyArray, List<T> values)
         {
             if (emptyArray.Length != values.Count)
                 throw new ArgumentException("Empty Array and Values don't match");
 
+            T[] populatedArray = emptyArray;
+
             for(int i=0; i<=emptyArray.Length-1; i++)
             {
-                emptyArray[i] = values[i];
+                populatedArray[i] = values[i];
             }
-            return emptyArray;
+            return populatedArray;
         }
         public static T GetFirstElement<T>(T[] populatedArray)
         {

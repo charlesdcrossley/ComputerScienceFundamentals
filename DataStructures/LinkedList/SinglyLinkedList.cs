@@ -34,11 +34,14 @@ namespace DataStructures.LinkedList
         
         }
         public void InsertLast(Node<T> node)
-        {
-            Tail.Next = node;
-            Node<T> temp = Tail;            
-            Tail = node;            ;
-            Tail.Next = temp;
+        {            
+            Node<T> temp = Tail;
+
+            temp.Next = node;
+
+            Tail = node;
+
+            
                     }
         public T GetFirst()
         {

@@ -16,18 +16,18 @@ namespace DataStructures.Test.Arrays
         private Faker _faker = new Faker();
 
         [TestMethod]
-        public void DeclareEmptyArray_WhenGivenNumberOfElementsAndType_ReturnsEmptyArrayOfSize()
+        public void CreateInstance_WhenInstantiated_ReturnsEmptyArrayOfSize()
         {
             // Arrange 
 
             int arraySize = 40;
 
             // Act 
-            string[] emptyArray = SingleDimensionArray.DeclareEmptyArray<string>(arraySize);
+            SingleDimensionArray<string> emptyArray = new SingleDimensionArray<string>(arraySize);
 
             // Assert 
 
-            Assert.AreEqual(arraySize, emptyArray.Length);
+            Assert.AreEqual(arraySize, emptyArray.GetArray().Length);
 
         }
 
@@ -35,12 +35,12 @@ namespace DataStructures.Test.Arrays
         public void PopulateEmptyArray_WhenGivenEmptyArrayAndListOfElements_ReturnsPopulatedArray()
         {
             // Arrange
-            string[] emptyArray = SingleDimensionArray.DeclareEmptyArray<string>(40);
+            SingleDimensionArray<string> emptyArray = new SingleDimensionArray<string>(40);
 
             var randomStrings = Enumerable.Range(1, 40).Select(f => _faker.Random.AlphaNumeric(10)).ToList();
 
             // Act 
-            var populatedArray = SingleDimensionArray.PopulateEmptyArray(emptyArray, randomStrings);
+            var populatedArray = SingleDimensionArray<string>.PopulateEmptyArray(emptyArray.GetArray(), randomStrings);
 
             // Assert 
             CollectionAssert.AllItemsAreNotNull(populatedArray);
@@ -54,7 +54,7 @@ namespace DataStructures.Test.Arrays
             var expectedResult = populatedArray.GetValue(0);
 
             // Act
-            int firstElement = SingleDimensionArray.GetFirstElement(populatedArray);
+            int firstElement = SingleDimensionArray<int>.GetFirstElement(populatedArray);
 
             // Assert
             Assert.AreEqual(firstElement, expectedResult);
@@ -67,7 +67,7 @@ namespace DataStructures.Test.Arrays
             var expectedResult = populatedArray.GetValue(9);
 
             // Act
-            int lastElement = SingleDimensionArray.GetLastElement(populatedArray);
+            int lastElement = SingleDimensionArray<int>.GetLastElement(populatedArray);
 
             // Assert
             Assert.AreEqual(lastElement, expectedResult);
@@ -80,7 +80,7 @@ namespace DataStructures.Test.Arrays
             var expectedResult = populatedArray.GetValue(4);
 
             // Act
-            int nthElement = SingleDimensionArray.GetNthElement(populatedArray, 4);
+            int nthElement = SingleDimensionArray<int>.GetNthElement(populatedArray, 4);
 
             // Assert
             Assert.AreEqual(nthElement, expectedResult);
@@ -94,7 +94,7 @@ namespace DataStructures.Test.Arrays
 
             // Act
 
-            int index = SingleDimensionArray.FindValue(populatedArray, 6);
+            int index = SingleDimensionArray<int>.FindValue(populatedArray, 6);
 
             // Assert 
 
