@@ -23,7 +23,8 @@ namespace DataStructures.Test.Arrays
             TwoDimensionalArray<int> twoDimArray = new TwoDimensionalArray<int>(7, 7);
             
             // Assert
-            Assert.AreEqual(twoDimArray.GetArray().Length,49);
+            // 49
+            Assert.AreEqual(twoDimArray.GetArray().Length,expectedRows * expectedColumns);
             
         }
         [TestMethod]
@@ -67,9 +68,7 @@ namespace DataStructures.Test.Arrays
             // Act 
             testArray.PopulateArray(dataToPopulate);
 
-            //Assert
-
-            
+            //Assert            
 
             CollectionAssert.AllItemsAreInstancesOfType(testArray.GetArray(), typeof(int));
             Assert.AreEqual(testArray.GetArray()[1, 3], 4);

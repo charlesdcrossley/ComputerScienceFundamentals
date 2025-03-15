@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace DataStructures.Test.Arrays
 {
     [TestClass]
-    public class SingleDimensionalArrayTests
+    public class SingleDimensionalArrayTests 
     {
         private Faker _faker = new Faker();
 

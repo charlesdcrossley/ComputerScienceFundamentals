@@ -9,6 +9,7 @@ namespace DataStructures.Arrays
     public class TwoDimensionalArray<T>
     {
         private readonly T[,] _array;
+        private readonly int _size;
         private readonly int _rowSize;
         private readonly int _columnSize;
         public TwoDimensionalArray(int numRows, int numColumns)
@@ -33,6 +34,10 @@ namespace DataStructures.Arrays
                 }
             }
             return _array;
+        }
+        public int GetSize()
+        {
+            return _array.Length;
         }
         public int GetRowSize()
         {
