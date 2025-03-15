@@ -36,5 +36,11 @@ namespace DataStructures.Arrays
         {
             return populatedArray[n];
         }
+        public static int FindValue<T>(T[] populatedArray, T value)
+        {
+            Array.Sort<T>(populatedArray);
+            return Array.BinarySearch<T>(populatedArray,value);
+        }
+
     }
 }
