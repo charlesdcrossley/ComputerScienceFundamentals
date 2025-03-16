@@ -38,11 +38,11 @@ namespace DataStructures.Arrays
         }
         public T[,,] PopulateArray(List<List<List<T>>> inputData)
         {
-            for(int i = 0; i <= inputData.Count-1; i++)
+            for(int i = 0; i < inputData.Count; i++)
             {
-                for(int j = 0; j <= inputData[i].Count-1; j++)
+                for(int j = 0; j < inputData[i].Count; j++)
                 {
-                    for(int k = 0; k <= inputData[j].Count-1; k++)
+                    for(int k = 0; k < inputData[i][j].Count; k++)
                     {
                         _array[i,j,k] = inputData[i][j][k]; 
                     }
@@ -50,5 +50,27 @@ namespace DataStructures.Arrays
             }
             return _array;
         }
+
+        // N^3 Cubic Complexity - How can I reduce ?
+        public int[] Find<T>(T value)
+        {
+            for (int i = 0; i < _length; i++)
+            {
+                for (int j = 0; j < _width; j++)
+                {
+                    for(int k = 0; k< _height; k++)
+                    {
+                        if (_array[i, j, k].Equals(value))
+                            return [i,j,k];
+                    }
+                }
+            }
+            return [ -1,-1];
+        }
+        public T GetValue(int length, int width, int height)
+        {
+            return _array[length, width, height];
+        }
+
     }
 }

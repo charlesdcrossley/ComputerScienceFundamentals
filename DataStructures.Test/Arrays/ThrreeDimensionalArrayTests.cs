@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Test.Arrays
 {
+    
     [TestClass]
     public class ThrreeDimensionalArrayTests
     {
@@ -71,7 +72,7 @@ namespace DataStructures.Test.Arrays
             // Arrange
             ThreeDimensionalArray<int> testArray = new ThreeDimensionalArray<int>(5, 5, 5);
 
-            List<List<List<int>>> fullCube = new List<List<List<int>>>();
+            List<List<List<int>>> fullCube = PopulateTestArrayOfIntegers(5, 5, 5);
             List<List<int>> slicesOfCube = new List<List<int>>();
 
             for(int i = 0; i< 5; i++)
@@ -92,6 +93,64 @@ namespace DataStructures.Test.Arrays
             CollectionAssert.AllItemsAreInstancesOfType(testArray.GetArray(), typeof(int));
             Assert.AreEqual(testArray.GetArray()[0, 0,0], 0);
             Assert.AreEqual(testArray.GetArray()[4, 4, 4], 8);
+        }
+
+        [TestMethod]
+        public void Find_WhenGivenValue_ReturnsIndexes()
+        {
+            // Arrange
+            ThreeDimensionalArray<int> testArray = new ThreeDimensionalArray<int>(3, 4, 5);
+
+            List<List<List<int>>> dataToPopulate = PopulateTestArrayOfIntegers(3, 4, 5);
+            testArray.PopulateArray(dataToPopulate);
+
+            int[] expectedResult = [0,1,4 ];
+            // Act 
+
+            int[] resultIndex = testArray.Find(5);
+
+            // Assert
+
+            CollectionAssert.AreEqual(resultIndex, expectedResult);
+        }
+        private List<List<List<int>>> PopulateTestArrayOfIntegers(int length, int width, int height)
+        {
+            List<List<List<int>>> fullCube = new List<List<List<int>>>();
+
+            for (int i = 0; i < length; i++)
+            {
+                List<List<int>> slicesOfCube = new List<List<int>>();
+
+                for(int j=0; j<width; j++)
+                {
+                    List<int> slicesOfPlane = new List<int>(); 
+                    for(int k=0; k<height; k++)
+                    {
+                        slicesOfPlane.Add(i+j+k);
+                    }
+                    slicesOfCube.Add(slicesOfPlane);
+                }
+                fullCube.Add(slicesOfCube);
+            }
+            
+            return fullCube;
+        }
+        [TestMethod]
+        public void GetValue_WhenGiveLengthWidthHeight_ReturnsValueFromCube()
+        {
+            // Arrange
+            ThreeDimensionalArray<int> testArray = new ThreeDimensionalArray<int>(10, 10, 10);
+
+            List<List<List<int>>> dataToPopulate = PopulateTestArrayOfIntegers(10, 10, 10);
+            testArray.PopulateArray(dataToPopulate);
+
+            int length = 5;
+            int width = 5;
+            int height = 5;
+
+            int value = testArray.GetValue(length, width, height);
+            Assert.AreEqual(15, value);
+
         }
     }
 }

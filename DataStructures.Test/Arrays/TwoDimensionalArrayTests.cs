@@ -80,11 +80,14 @@ namespace DataStructures.Test.Arrays
         {
             // Arrange
             TwoDimensionalArray<int> testArray = new TwoDimensionalArray<int>(10, 10);
+            List<List<int>> dataToPopulate = PopulateTestArrayOfIntegers(10, 10);
+            testArray.PopulateArray(dataToPopulate);
             int column = 5;
             int row = 5;
 
             int value = testArray.GetValue(row, column);
 
+            Assert.AreEqual(11, value);
         }
         [TestMethod]
         public void Find_WhenGivenValue_ReturnsIndexes()
