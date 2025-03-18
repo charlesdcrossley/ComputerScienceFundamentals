@@ -32,7 +32,6 @@ namespace DataStructures.Test.Arrays
         {
             // Arrange
             SingleDimensionArray<string> emptyArray = new SingleDimensionArray<string>(40);
-
             var randomStrings = Enumerable.Range(1, 40).Select(f => _faker.Random.AlphaNumeric(10)).ToList();
 
             // Act 
@@ -89,11 +88,9 @@ namespace DataStructures.Test.Arrays
             int[] populatedArray = [1, 2, 3, 4, 5, 6, 6, 8, 9, 10];
 
             // Act
-
             int index = SingleDimensionArray<int>.FindValue(populatedArray, 6);
 
-            // Assert 
-
+            // Assert
             Assert.AreEqual(index, 5);
             }
     }

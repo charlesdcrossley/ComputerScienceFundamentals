@@ -33,6 +33,7 @@ namespace DataStructures.Test.Arrays
             // Arrange
             TwoDimensionalArray<float> testArray = new TwoDimensionalArray<float>(5,5);
             int expectedColumnSize = 5;
+
             // Act
             int columnSize = testArray.GetColumnSize();
 
@@ -68,8 +69,7 @@ namespace DataStructures.Test.Arrays
             // Act 
             testArray.PopulateArray(dataToPopulate);
 
-            //Assert            
-
+            //Assert
             CollectionAssert.AllItemsAreInstancesOfType(testArray.GetArray(), typeof(int));
             Assert.AreEqual(testArray.GetArray()[1, 3], 4);
             Assert.AreEqual(testArray.GetArray()[4, 4], 8);
@@ -85,8 +85,10 @@ namespace DataStructures.Test.Arrays
             int column = 5;
             int row = 5;
 
+            //Act 
             int value = testArray.GetValue(row, column);
 
+            //Assert
             Assert.AreEqual(11, value);
         }
         [TestMethod]
@@ -99,12 +101,11 @@ namespace DataStructures.Test.Arrays
             testArray.PopulateArray(dataToPopulate);
 
             int[] expectedResult = [2, 2];
-            // Act 
 
+            // Act 
             int[] resultIndex = testArray.Find(5);
 
             // Assert
-
             CollectionAssert.AreEqual(resultIndex, expectedResult);
         }
 

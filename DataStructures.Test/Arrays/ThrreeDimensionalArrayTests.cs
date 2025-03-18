@@ -15,17 +15,14 @@ namespace DataStructures.Test.Arrays
         public void CreateInstance_WhenInstantiated_ReturnsEmptyArrayOfSize()
         {
             // Arrange 
-
             int expectedRows = 3;
             int expectedColumns = 4;
             int expectedLevels = 5;
 
             // Act 
-
             ThreeDimensionalArray<int> testArray = new ThreeDimensionalArray<int>(3, 4, 5);
 
             // Assert
-
             Assert.AreEqual(testArray.GetArray().Length, expectedRows * expectedColumns * expectedLevels);
 
         }
@@ -72,18 +69,7 @@ namespace DataStructures.Test.Arrays
             // Arrange
             ThreeDimensionalArray<int> testArray = new ThreeDimensionalArray<int>(5, 5, 5);
 
-            List<List<List<int>>> fullCube = PopulateTestArrayOfIntegers(5, 5, 5);
-            List<List<int>> slicesOfCube = new List<List<int>>();
-
-            for(int i = 0; i< 5; i++)
-            {
-                slicesOfCube.Add(new List<int>() { i, i + 1, i + 2, i + 3, i + 4 });
-            }
-
-            for (int i = 0; i < 5; i++)
-            {
-                fullCube.Add(slicesOfCube);
-            }
+            List<List<List<int>>> fullCube = PopulateTestArrayOfIntegers(5, 5, 5);            
 
             // Act 
             testArray.PopulateArray(fullCube);
@@ -92,7 +78,7 @@ namespace DataStructures.Test.Arrays
 
             CollectionAssert.AllItemsAreInstancesOfType(testArray.GetArray(), typeof(int));
             Assert.AreEqual(testArray.GetArray()[0, 0,0], 0);
-            Assert.AreEqual(testArray.GetArray()[4, 4, 4], 8);
+            Assert.AreEqual(testArray.GetArray()[4, 4, 4], 12);
         }
 
         [TestMethod]
@@ -113,28 +99,7 @@ namespace DataStructures.Test.Arrays
 
             CollectionAssert.AreEqual(resultIndex, expectedResult);
         }
-        private List<List<List<int>>> PopulateTestArrayOfIntegers(int length, int width, int height)
-        {
-            List<List<List<int>>> fullCube = new List<List<List<int>>>();
-
-            for (int i = 0; i < length; i++)
-            {
-                List<List<int>> slicesOfCube = new List<List<int>>();
-
-                for(int j=0; j<width; j++)
-                {
-                    List<int> slicesOfPlane = new List<int>(); 
-                    for(int k=0; k<height; k++)
-                    {
-                        slicesOfPlane.Add(i+j+k);
-                    }
-                    slicesOfCube.Add(slicesOfPlane);
-                }
-                fullCube.Add(slicesOfCube);
-            }
-            
-            return fullCube;
-        }
+        
         [TestMethod]
         public void GetValue_WhenGiveLengthWidthHeight_ReturnsValueFromCube()
         {
@@ -148,9 +113,36 @@ namespace DataStructures.Test.Arrays
             int width = 5;
             int height = 5;
 
+            // Act 
             int value = testArray.GetValue(length, width, height);
+            
+            // Assert
             Assert.AreEqual(15, value);
 
+        }
+        private List<List<List<int>>> PopulateTestArrayOfIntegers(int length, int width, int height)
+        {
+            // Arrange
+            List<List<List<int>>> fullCube = new List<List<List<int>>>();
+
+            // Act
+            for (int i = 0; i < length; i++)
+            {
+                List<List<int>> slicesOfCube = new List<List<int>>();
+
+                for (int j = 0; j < width; j++)
+                {
+                    List<int> slicesOfPlane = new List<int>();
+                    for (int k = 0; k < height; k++)
+                    {
+                        slicesOfPlane.Add(i + j + k);
+                    }
+                    slicesOfCube.Add(slicesOfPlane);
+                }
+                fullCube.Add(slicesOfCube);
+            }
+
+            return fullCube;
         }
     }
 }
