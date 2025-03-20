@@ -1,3 +1,7 @@
+>[!NOTE]
+> This is a work in progress and I'm diving deep into all topics starting from the basics - primitive data types and arrays
+> Start Date 
+
 # Computer Science Fundamentals
 
 *I started this project as a "Back to Basic Training"
@@ -14,6 +18,14 @@ Inspired by Elon Musk on how he formed Space X - First Principle Thinking
 - Elements in Chemistry
 - Leggos
 - Bricks for a house
+
+## Practices while developing  
+- Test Driven Development **(TDD)**
+- Object Oriented Principles
+   - Encapsulation
+   - Polymorphism
+   - Inheritance
+   - 
 
 ## References : 
 
