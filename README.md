@@ -1,6 +1,6 @@
 >[!NOTE]
-> This is a work in progress and I'm diving deep into all topics starting from the basics - primitive data types and arrays
-> Start Date 
+> This is a work in progress and I'm diving deep into all topics starting from the basics - primitive data types and arrays  
+> Start Date :
 
 # Computer Science Fundamentals
 
