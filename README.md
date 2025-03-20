@@ -21,7 +21,7 @@ Inspired by Elon Musk on how he formed Space X - First Principle Thinking
 
 ## Practices while developing  
 - Test Driven Development **(TDD)**
-- Object Oriented Principles
+- Object Oriented 
    - Encapsulation
    - Polymorphism
    - Inheritance
