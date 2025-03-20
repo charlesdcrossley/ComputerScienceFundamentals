@@ -4,7 +4,8 @@
 
 # Computer Science Fundamentals
 
-*I started this project as a "Back to Basic Training"
+### Back to the Basics Training  
+
 After 13 years in the profession, I felt I needed a refresher on the fundamental or "First Principles" of Computer Science.*
 
 Inspired by Elon Musk on how he formed Space X - First Principle Thinking 
