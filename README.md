@@ -1,18 +1,22 @@
-Started this project as a "Back to Basic Training", as 13 years in the profession I have become rusty on the fundamental or "First" Principles of Computer Science. 
+# Computer Science Fundamentals
 
-![image](https://github.com/user-attachments/assets/70b553ee-de6b-48d4-8a32-1db3591c74eb)
+*I started this project as a "Back to Basic Training"
+After 13 years in the profession, I felt I needed a refresher on the fundamental or "First Principles" of Computer Science.*
 
-References : 
+Inspired by Elon Musk on how he formed Space X - First Principle Thinking 
 
-Jamro, M. (2024). C# Data Structures and Algorithms (2nd ed.). Packt Publishing.
+## What is First Principle Thinking?
 
+1. Break the problem to it's fundamental parts that can't be reduced any further
+2. Build up from there
 
+## Examples
+- Elements in Chemistry
+- Leggos
+- Bricks for a house
 
-Data Structures based Great Lecture from:
+## References : 
 
-Engineer Spock - Udemy
-
-https://www.udemy.com/course/algorithms-data-structures-csharp/
-
-![alt text](agorithms-and-data-structures.png)
+- Jamro, M. (2024). C# Data Structures and Algorithms (2nd ed.). Packt Publishing.
+- Spock, E. (2020, July 20). Algorithms and Data Structures in C#: Complete Tutorial [Udemy Lecture]. https://www.udemy.com/course/algorithms-data-structures-csharp
 
