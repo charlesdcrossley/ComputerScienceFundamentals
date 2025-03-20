@@ -25,7 +25,13 @@ Inspired by Elon Musk on how he formed Space X - First Principle Thinking
    - Encapsulation
    - Polymorphism
    - Inheritance
-   - 
+   - Abstraction
+- SOLID
+   - Single Responsibility
+   - Open Close
+   - Liskov Substitution
+   - Interface Segregation
+   - Dependency Inversion
 
 ## References : 
 
