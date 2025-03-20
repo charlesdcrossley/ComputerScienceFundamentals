@@ -4,7 +4,7 @@
 
 # Computer Science Fundamentals
 
-### Back to the Basics Training  
+## Back to the Basics Training  
 
 After 13 years in the profession, I felt I needed a refresher on the fundamental or "First Principles" of Computer Science.*
 
@@ -33,6 +33,8 @@ Inspired by Elon Musk on how he formed Space X - First Principle Thinking
    - Liskov Substitution
    - Interface Segregation
    - Dependency Inversion
+## Layout
+![image](https://github.com/user-attachments/assets/4812cf1b-8847-423c-b123-866ff6c786d5)
 
 ## References : 
 
