@@ -16,7 +16,7 @@ Inspired by Elon Musk on how he formed Space X - First Principle Thinking
 
 ## Examples
 - Elements in Chemistry
-- Leggos
+- Legos
 - Bricks for a house
 
 ## Practices while developing  
