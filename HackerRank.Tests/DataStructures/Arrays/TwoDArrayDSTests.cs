@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HackerRank.Tests
+namespace HackerRank.Test.DataStructures.Arrays
 {
     [TestClass]
     public class TwoDArrayDSTests

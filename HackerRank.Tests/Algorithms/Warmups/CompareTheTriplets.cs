@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HackerRank.Algorithms.Warmups;
-namespace HackerRank.Test
+namespace HackerRank.Test.Algorithms.Warmups
 {
     [TestClass]
     public class CompareTheTripletsTests

@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="InterviewPrep\OneWeek\DayOne.Tests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Bogus" Version="35.6.2" />
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -26,10 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ExpectedOutput\DynamicArray.QueryProcessor.txt">
+    <None Update="DataStructures\Arrays\ExpectedOutput\DynamicArray.QueryProcessor.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Input\DynamicArray.QueryProcessor.txt">
+    <None Update="DataStructures\Arrays\Input\DynamicArray.QueryProcessor.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
