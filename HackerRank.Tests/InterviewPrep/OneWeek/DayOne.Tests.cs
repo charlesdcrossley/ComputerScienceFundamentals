@@ -10,27 +10,44 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
     [TestClass]
     public class DayOneTests
     {
+        private StringWriter _writer = new StringWriter();
+        private StringWriter _expectedOutput = new StringWriter();
+
+        public DayOneTests()
+        {
+            Console.SetOut(_writer);
+        }
+
         [TestMethod]
-        public void PlusMinus_WhenGivenArrayOfIntegers_ReturnsRatioPositiveNegativeZero()
+        public void PlusMinus_WhenGivenArrayOfIntegers_PrintsOutRatioPositiveNegativeZero()
         {
             //Arrange
             List<int> test = new List<int> { -4, 3, -9, 0, 4, 1 };
-
-            var writer = new StringWriter();
-            Console.SetOut(writer);
-
-            var expectedOutput = new StringWriter();
-            expectedOutput.WriteLine("0.500000");
-            expectedOutput.WriteLine("0.333333");
-            expectedOutput.WriteLine("0.166667");
+            
+            _expectedOutput.WriteLine("0.500000");
+            _expectedOutput.WriteLine("0.333333");
+            _expectedOutput.WriteLine("0.166667");
 
             //Act
             DayOne.plusMinus(test);
 
             //Assert
-            Assert.IsTrue(String.Equals(writer.ToString(), expectedOutput.ToString()));
+            Assert.IsTrue(String.Equals(_writer.ToString(), _expectedOutput.ToString()));
 
         }
 
+        [TestMethod]
+        public void MiniMaxSum_GivenFivePositiveIntegers_PrintsOutMinimumAndMaximumSumFromFourIntegers()
+        {
+            // Arrange
+            List<int> arr = new List<int> { 7, 69, 2, 221, 8974 };
+            _expectedOutput.WriteLine("299 9271");
+            
+            // Act 
+            DayOne.miniMaxSum(arr);
+
+            // Assert
+            Assert.IsTrue(String.Equals(_writer.ToString(), _expectedOutput.ToString()));
+        }
     }
 }

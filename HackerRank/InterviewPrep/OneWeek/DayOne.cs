@@ -40,6 +40,23 @@ namespace HackerRank.InterviewPrep.OneWeek
             Console.WriteLine(Math.Round(zeroIntegerRatio, 6).ToString("N6"));
 
         }
-                
+        public static void miniMaxSum(List<int> arr)
+        {
+            arr.Sort();            
+
+            long median = 0;
+            long min = 0;
+            long max = 0;
+
+            for(int i = 1; i < arr.Count()-1; i++)
+            {
+                median = median + arr[i];
+            }
+
+            min = median + arr[0];
+            max = median + arr[arr.Count-1];
+
+            Console.WriteLine(min.ToString() + " " + max.ToString());
+        }
     }
 }
