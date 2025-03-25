@@ -10,7 +10,7 @@ namespace DataStructures.Arrays.Examples
     {
         public enum WorkoutType { Run, Bike, Swim}
 
-        public static WorkoutType[] GenerateWorkoutPlan()
+        public static WorkoutType[] GenerateTriathalonPlan()
         {
             Random random = new();
             int workoutCount = Enum.GetNames<WorkoutType>().Length;
