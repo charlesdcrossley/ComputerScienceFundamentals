@@ -60,6 +60,8 @@ namespace HackerRank.InterviewPrep.OneWeek
 
             Console.WriteLine(min.ToString() + " " + max.ToString());
         }
+
+        //https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/
         public static string TimeConversion(string s)
         {
             var amPm = s.Substring(s.Length - 2);
@@ -85,6 +87,7 @@ namespace HackerRank.InterviewPrep.OneWeek
             return $"{hour.ToString("00")}:{splitTime[1]}:{splitTime[2]}";
         }
 
+        // Mock Test
         public static int FindMedian(List<int> arr)
         {
             arr.Sort();
