@@ -8,7 +8,6 @@
 
 After 13 years in the profession, I felt I needed a refresher on the fundamental or "First Principles" of Computer Science.*
 
-Inspired by Aristotle, Steven Kotler (The Art of Impossible), and Elon Musk on how he formed Space X - First Principle Thinking 
 
 ## What is First Principle Thinking?
 
