@@ -29,5 +29,21 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
             // Assert
             Assert.AreEqual(expectedOutput, result);
         }
+        [TestMethod]
+        public void DiagonalDifference_GivenSquareMatrix_FindUniqueInteger()
+        {
+            // Arrange
+            List<List<int>> arr = [ [1,2,3],
+                                    [4,5,6],
+                                    [9,8,9]];
+
+            int expectedResult = 2;
+
+            // Act
+            int result = DayTwo.DiagonalDifference(arr);
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }

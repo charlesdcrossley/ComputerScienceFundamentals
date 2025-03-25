@@ -25,5 +25,19 @@ namespace HackerRank.InterviewPrep.OneWeek
             return lookup.FirstOrDefault(x => x.Value == 1).Key; 
         }
 
+        public static int DiagonalDifference(List<List<int>> arr)
+        {
+            int leftToRight = 0;
+            int rightToLeft = 0;
+            int count = arr.Count;
+
+            for(int i=0,j=count-1; i<arr.Count; i++, j--)
+            {
+                leftToRight = leftToRight + arr[i][i];
+                rightToLeft = rightToLeft + arr[i][j];
+            }
+
+            return Math.Abs(leftToRight - rightToLeft);
+        }
     }
 }
