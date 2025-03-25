@@ -7,7 +7,7 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HackerRank.Tests
+namespace HackerRank.Test.DataStructures.Arrays
 {
     [TestClass]
     public class DynamicArrayTests
@@ -16,8 +16,8 @@ namespace HackerRank.Tests
         public void DynamicArray_WhenGivenIntegerAnd2DArrayOfQueries_ReturnsCorrectIntegerArray()
         {
             // Arrange
-            string txtInput = GetFilePath(@"Input\DynamicArray.QueryProcessor.txt");
-            string txtExpectedOutput = GetFilePath(@"ExpectedOutput\DynamicArray.QueryProcessor.txt");
+            string txtInput = GetFilePath(@"DataStructures\Arrays\Input\DynamicArray.QueryProcessor.txt");
+            string txtExpectedOutput = GetFilePath(@"DataStructures\Arrays\ExpectedOutput\DynamicArray.QueryProcessor.txt");
             
             StreamReader input = new StreamReader(txtInput);            
 
@@ -38,8 +38,8 @@ namespace HackerRank.Tests
 
             List<int> expected = new List<int>();
 
-            string t = String.Empty;
-            while (!String.IsNullOrEmpty(t = expectedOutput.ReadLine()))
+            string t = string.Empty;
+            while (!string.IsNullOrEmpty(t = expectedOutput.ReadLine()))
             {
                 expected.Add(Convert.ToInt32(t));
             }

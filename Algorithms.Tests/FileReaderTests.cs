@@ -12,6 +12,9 @@ namespace Algorithms.Test
         [TestMethod]
         public void ReadIntegersFromFile_WhenPassedValidIntegersFromFile_ReturnsIEnumerableWithIntegers()
         {
+            int[] array = new int[10];
+            array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
             var outputIntegers = FileReader.ReadIntegersFromFile(@"TestData\1Kints.txt");
 
             Assert.IsTrue(outputIntegers.All(x => x is int));

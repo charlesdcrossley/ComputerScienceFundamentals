@@ -23,7 +23,6 @@ namespace DataStructures.Arrays
         { 
             return _size; 
         }
-
         
         public static T[] PopulateEmptyArray(T[] emptyArray, List<T> values)
         {
