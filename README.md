@@ -1,5 +1,5 @@
 >[!NOTE] 
-> This is a work in progress and I'm diving deep into all topics starting from the basics - primitive data types and arrays  
+> This is a work in progress and I'm diving deep into all topics starting from the basics 
 > - Start Date : March 5, 2025
 
 # Computer Science Fundamentals
@@ -8,7 +8,7 @@
 
 After 13 years in the profession, I felt I needed a refresher on the fundamental or "First Principles" of Computer Science.*
 
-Inspired by Elon Musk on how he formed Space X - First Principle Thinking 
+Inspired by Aristotle, Steven Kotler (The Art of Impossible), and Elon Musk on how he formed Space X - First Principle Thinking 
 
 ## What is First Principle Thinking?
 
