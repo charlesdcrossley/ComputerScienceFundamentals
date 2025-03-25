@@ -12,7 +12,6 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
     public class DayOneTests
     {
         private StringWriter _writer = new StringWriter();
-        private StringWriter _expectedOutput = new StringWriter();
 
         public DayOneTests()
         {
@@ -24,16 +23,17 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
         {
             //Arrange
             List<int> test = new List<int> { -4, 3, -9, 0, 4, 1 };
-            
-            _expectedOutput.WriteLine("0.500000");
-            _expectedOutput.WriteLine("0.333333");
-            _expectedOutput.WriteLine("0.166667");
+            var expectedOutput = new StringWriter();
+
+            expectedOutput.WriteLine("0.500000");
+            expectedOutput.WriteLine("0.333333");
+            expectedOutput.WriteLine("0.166667");
 
             //Act
             DayOne.PlusMinus(test);
 
             //Assert
-            Assert.IsTrue(String.Equals(_writer.ToString(), _expectedOutput.ToString()));
+            Assert.IsTrue(String.Equals(_writer.ToString(), expectedOutput.ToString()));
 
         }
 
@@ -42,13 +42,14 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
         {
             // Arrange
             List<int> arr = new List<int> { 7, 69, 2, 221, 8974 };
-            _expectedOutput.WriteLine("299 9271");
+            var expectedOutput = new StringWriter();
+            expectedOutput.WriteLine("299 9271");
             
             // Act 
             DayOne.MiniMaxSum(arr);
 
             // Assert
-            Assert.IsTrue(String.Equals(_writer.ToString(), _expectedOutput.ToString()));
+            Assert.IsTrue(String.Equals(_writer.ToString(), expectedOutput.ToString()));
         }
 
         [TestMethod]
