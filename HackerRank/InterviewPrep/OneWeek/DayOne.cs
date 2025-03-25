@@ -9,7 +9,7 @@ namespace HackerRank.InterviewPrep.OneWeek
     public class DayOne
     {
         //https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/
-        public static void plusMinus(List<int> arr)
+        public static void PlusMinus(List<int> arr)
         {
             int positiveIntegers = 0;
             int negativeIntegers = 0;
@@ -40,7 +40,9 @@ namespace HackerRank.InterviewPrep.OneWeek
             Console.WriteLine(Math.Round(zeroIntegerRatio, 6).ToString("N6"));
 
         }
-        public static void miniMaxSum(List<int> arr)
+
+        //https://www.hackerrank.com/challenges/one-week-preparation-kit-mini-max-sum
+        public static void MiniMaxSum(List<int> arr)
         {
             arr.Sort();            
 
@@ -57,6 +59,38 @@ namespace HackerRank.InterviewPrep.OneWeek
             max = median + arr[arr.Count-1];
 
             Console.WriteLine(min.ToString() + " " + max.ToString());
+        }
+        public static string TimeConversion(string s)
+        {
+            var amPm = s.Substring(s.Length - 2);
+            var rawtime = s.Substring(0,s.Length - 2);
+
+            var splitTime = rawtime.Split(":");
+
+            var hour = Int32.Parse(splitTime[0]) ;
+            var minute = Int32.Parse(splitTime[1]);
+            var second = Int32.Parse(splitTime[2]);
+
+            
+            switch (amPm)
+            {                
+                case "PM":
+                    hour = hour == 12 ? hour : hour + 12;
+                    break;
+                case "AM":
+                    hour = hour == 12 ? 0 : hour;
+                    break;
+            }    
+
+            return $"{hour.ToString("00")}:{splitTime[1]}:{splitTime[2]}";
+        }
+
+        public static int FindMedian(List<int> arr)
+        {
+            arr.Sort();
+
+            return (arr[arr.Count / 2]);
+
         }
     }
 }

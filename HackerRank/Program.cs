@@ -1,7 +1,7 @@
 ﻿using HackerRank.InterviewPrep.OneWeek;
 
 List<int> test = new List<int> { -4, 3, -9, 0, 4, 1 };
-DayOne.plusMinus(test);
+DayOne.PlusMinus(test);
 
 var expectedOutput = new StringWriter();
 expectedOutput.WriteLine("0.500000");
