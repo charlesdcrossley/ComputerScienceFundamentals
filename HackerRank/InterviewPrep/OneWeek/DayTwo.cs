@@ -50,5 +50,12 @@ namespace HackerRank.InterviewPrep.OneWeek
 
             return count;
         }
+        public static int FlippingMatrix(List<List<int>> matrix)
+        {
+            int sum = 0;
+            int n = matrix.Count/2;
+
+            return sum;
+        }
     }
 }

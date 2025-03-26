@@ -61,5 +61,18 @@ namespace HackerRank.Test.InterviewPrep.OneWeek
             // Assert 
             CollectionAssert.AreEqual(result, expectedResult);
         }
+        [TestMethod]
+        public void FlippingtheMatrix_GivenTwoNbyTwoNmatrix_ReturnMaxSumForUpperLeftQuadrant()
+        {
+            // Arrange
+            List<List<int>> matrix = [[112, 42, 83, 119], [56, 125, 56, 49], [15, 78, 101, 43], [62, 98, 114, 108]];
+            int expectedResult = 414;
+
+            // Act 
+            int result = DayTwo.FlippingMatrix(matrix);
+
+            // Assert
+            Assert.AreEqual(result, expectedResult);
+        }
     }
 }
