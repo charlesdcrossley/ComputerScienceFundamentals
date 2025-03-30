@@ -15,6 +15,14 @@ namespace DataStructures.Arrays
         private int _height;
         public ThreeDimensionalArray(int length, int width, int height)
         {
+            int[][] array = new int[5][];
+            array[0] = [1, 2, 3, 4];
+            array[1] = [1, 2, 3];
+            array[2] = [1, 2];
+            array[3] = [1, 2, 3];
+            array[4] = [1, 2];
+            array[5] = [1];
+
             _array = new T[length, width, height];
             _length = length;
             _width = width;

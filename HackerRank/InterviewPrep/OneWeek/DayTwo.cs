@@ -55,6 +55,19 @@ namespace HackerRank.InterviewPrep.OneWeek
             int sum = 0;
             int n = matrix.Count/2;
 
+            for(int i = 0; i<n; i++)
+            {
+                for(int j = 0; j<n; j++)
+                {
+                    int topLeft = matrix[i][j];
+                    int topRight = matrix[i][2 * n - 1 - j];
+                    int bottomLeft = matrix[2 * n - 1 - i][j];
+                    int bottomRight = matrix[2 * n - 1 - i][2 * n - 1 - j];
+
+                    sum = sum + Math.Max(topLeft, Math.Max(topRight, Math.Max(bottomLeft, bottomRight)));
+                }
+            }
+
             return sum;
         }
     }
