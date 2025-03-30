@@ -4,11 +4,17 @@
 Scans the array  finding the smallest elements and swapping them from the beginning, gradually building the sorted array from the bottom up.
 
 ## Array to Sort
-![alt text](<Blank diagram - Page 1 (16).png>)
+<img src="unsorted-array.png" width="400">
 
 ## Algorithm
-``` 
-for i = 0 to 
+```bash
+FOR i = 0 to Array Length
+   FOR j = 0 to Array Length
+       Smallest Value in [j] moved to Array[i]  
+   NEXT j
+   END FOR
+NEXT i
+END FOR 
 ```
 
 ## What is the Time Complexity ?
