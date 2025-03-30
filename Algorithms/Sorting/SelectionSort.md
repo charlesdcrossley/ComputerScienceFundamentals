@@ -19,8 +19,11 @@ END FOR
 
 ## What is the Time Complexity ?
 
-**Worst Case  $O(n^2)$**
-**Average Case - $O(n^2)$**
+##### Worst Case 
+ $O(n^2)$
+
+##### Average Case
+$O(n^2)$
 
 ## Why is the Time Complexity $O(n^2)$
 
