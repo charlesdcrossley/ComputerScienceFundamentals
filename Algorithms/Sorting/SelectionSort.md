@@ -6,16 +6,18 @@ Scans the array  finding the smallest elements and swapping them from the beginn
 ## Array to Sort
 <img src="unsorted-array.png" width="400">
 
+
 ## Algorithm
 ```bash
 FOR i = 0 to Array Length
-   FOR j = 0 to Array Length
+   FOR j = 1 to Array Length
        Smallest Value in [j] moved to Array[i]  
    NEXT j
    END FOR
 NEXT i
 END FOR 
 ```
+<img src="sorting-algorithm.png" width="400">
 
 ## What is the Time Complexity ?
 
