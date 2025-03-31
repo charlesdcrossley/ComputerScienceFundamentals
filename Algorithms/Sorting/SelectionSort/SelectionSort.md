@@ -17,7 +17,7 @@ FOR i = 0 to Array Length
 NEXT i
 END FOR 
 ```
-<img src="sorting-algorithm.png" width="400">
+<img src="sorting-algorithm.png" width="600">
 
 ## What is the Time Complexity ?
 
