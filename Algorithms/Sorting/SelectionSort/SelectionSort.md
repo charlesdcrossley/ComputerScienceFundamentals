@@ -63,3 +63,6 @@ $O(n^2)$
 
 Because the sort requires a nested for loop, causing the number of operations to grow quadratically as the inputs get larger
 
+## Adapted From 
+
+- Jamro, M. (2024). C# Data Structures and Algorithms (2nd ed.). Packt Publishing.
