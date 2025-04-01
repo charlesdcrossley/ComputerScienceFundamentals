@@ -1,7 +1,7 @@
 # Selection Sort Algorithm
 
 ## What is Selection Sort?
-Scans the array  finding the smallest elements and swapping them from the beginning, gradually building the sorted array from the bottom up.
+Scans the array  finding the smallest elements and swapping them from the beginning, gradually building the sorted array from the left to right.
 
 ## Array to Sort
 <img src="unsorted-array.png" width="400">
@@ -11,7 +11,7 @@ Scans the array  finding the smallest elements and swapping them from the beginn
 ```bash
 FOR i = 0 to Array Length
    FOR j = 1 to Array Length
-       Smallest Value in [j] moved to Array[i]  
+       Smallest Value in [j] moved to [i]  
    NEXT j
    END FOR
 NEXT i
