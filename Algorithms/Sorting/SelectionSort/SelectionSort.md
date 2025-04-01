@@ -17,7 +17,7 @@ FOR i = 0 to Array Length
 NEXT i
 END FOR 
 ```
-<img src="sorting-algorithm.png" width="600">
+<img src="sorting-algorithm.png" width="1000">
 
 ## Code 
 ```CSharp
