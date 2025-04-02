@@ -17,8 +17,7 @@ FOR i = 0 to Array Length
 NEXT i
 END FOR 
 ```
-
-![alt text](<bubble-sort.png>)
+<img src="bubble-sort.png">
 
 ## Code 
 ```CSharp
