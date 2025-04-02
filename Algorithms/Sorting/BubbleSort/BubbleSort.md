@@ -21,9 +21,7 @@ END FOR
 
 ## Code 
 ```CSharp
-public class InsertionSort
-{
-    public class BubbleSort
+public class BubbleSort
 {
     public static int[] Sort(int[] unsortedArray)
     {
@@ -44,7 +42,6 @@ public class InsertionSort
         array[indexB] = temp;
         return array;
     }
-}
 }
 ```
 ## What is the Time Complexity ?
