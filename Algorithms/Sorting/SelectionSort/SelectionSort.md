@@ -1,7 +1,7 @@
 # Selection Sort Algorithm
 
 ## What is Selection Sort?
-Scans the array  finding the smallest elements and swapping them from the beginning, gradually building the sorted array from the left to right.
+Scans the array finding the smallest elements and swapping them from the beginning, gradually building the sorted array from the left to right.
 
 ## Array to Sort
 <img src="unsorted-array.png" width="400">
