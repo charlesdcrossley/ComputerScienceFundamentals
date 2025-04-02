@@ -18,8 +18,12 @@ After 13 years in the profession, I felt I needed a refresher on the fundamental
 - Elements in Chemistry
 - Legos
 - Bricks for a house
+- Letters forming words -> sentences -> paragraphs -> papers -> books -> series of books
+- Numbers in Mathematics
+- Molecules in Matter
 
 ## Practices while developing  
+- Trunk Based Development 
 - Test Driven Development **(TDD)**
 - Object Oriented 
    - Encapsulation
