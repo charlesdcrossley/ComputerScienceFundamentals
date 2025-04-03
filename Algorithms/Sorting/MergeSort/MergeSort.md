@@ -24,7 +24,7 @@ FUNCTION Sort (Array of Integers)
 END FUNCTION
 ```
 
-<img src="merge-sort-algorithm.png" width="1000">
+<img src="merge-sort.svg" >
 
 
 ## Code 
