@@ -34,11 +34,15 @@ END FUNCTION
 ## What is the Time Complexity ?
 
 ##### Worst Case 
+ $O(nlogn)$
 
 ##### Average Case
+ $O(nlogn)$
 
-## Why is the Time Complexity $O(n^2)$
-
+## Why is the Time Complexity $O(nlogn)$
+1. Splitting the array into 2 halves recursively = $O(logn)$
+2. Merging the arrays = $O(n)$
+3. Totalling $O(nlogn)$
 ## Adapted From 
 
 - Jamro, M. (2024). C# Data Structures and Algorithms (2nd ed.). Packt Publishing.
