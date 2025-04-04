@@ -16,25 +16,33 @@ namespace Algorithms.Sorting.MergeSort
             int midPoint = unsortedArray.Length / 2;
 
             int[] leftSegment = GetArraySegment(unsortedArray, 0, midPoint - 1);
-            int[] rightSegment = GetArraySegment(unsortedArray, 0, midPoint - 1);
+            int[] rightSegment = GetArraySegment(unsortedArray, midPoint,unsortedArray.Length-1);
 
             Sort(leftSegment);
             Sort(rightSegment);
-            int i = 0, j=0, k = 0;
-            while (i< leftSegment.Length && j < rightSegment.Length)
-            {
-                if (leftSegment[i] <= rightSegment[j])
-                    unsortedArray[k] = leftSegment[i++];
-                else
-                    unsortedArray[k] = rightSegment[j++];
-                k++;
-            }
-            while (i < leftSegment.Length)
-                unsortedArray[k++] = leftSegment[i++];
-            while (j < rightSegment.Length)
-                unsortedArray[k++] = rightSegment[j++];
-
+            Merge(unsortedArray,leftSegment, rightSegment);
             return unsortedArray;
+        }
+        private static void Merge(int[] mergedArray, int[] arrayA, int[] arrayB)
+        {
+            int arrayAIndex = 0;
+            int arrayBIndex = 0;
+            int mergedArrayIndex = 0;
+
+            while(arrayAIndex < arrayA.Length && arrayBIndex < arrayB.Length)
+            {
+                if (arrayA[arrayAIndex] < arrayB[arrayBIndex])
+                    mergedArray[mergedArrayIndex++] = arrayA[arrayAIndex++];
+                else
+                    mergedArray[mergedArrayIndex++] = arrayB[arrayBIndex++];
+            }
+
+            while (arrayAIndex < arrayA.Length)
+                mergedArray[mergedArrayIndex++] = arrayA[arrayAIndex++];
+
+            while (arrayBIndex < arrayB.Length)
+                mergedArray[mergedArrayIndex++] = arrayB[arrayBIndex++];
+
         }
         private static int[] GetArraySegment(int[] unsortedArray, int startIndex, int endIndex)
         {

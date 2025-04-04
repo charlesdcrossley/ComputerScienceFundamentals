@@ -15,15 +15,25 @@ namespace Algorithms.Test.Sorting
         public void Sort_WhenGivenArrayOfIntegers_ReturnsSortedArray()
         {
             // Arrange
-            int[] unsortedArray = new int[8] { 50, 35, -30, 150, 80, -10, -45, 142 };
-            int[] expectedResult = unsortedArray.Order().ToArray();
+            int[] array = new int[8] { 50, 35, -30, 150, 80, -10, -45, 142 };
+            int[] expectedResult = new int[8] { -45, -30, -10, 35, 50, 80, 142, 150 };
 
             // Act 
-            int[] sortedArray = MergeSort.Sort(unsortedArray);
+            MergeSort.Sort(array);
 
             // Assert
-            CollectionAssert.Equals(sortedArray, expectedResult);
+            Assert.IsTrue(IsSorted(array));
 
+        }
+        private bool IsSorted(int[] array)
+        {
+            for(int i = 1; i< array.Length; i++)
+            {
+                if (array[i - 1] > array[i])
+                    return false;
+
+            }
+            return true;
         }
 
     }
